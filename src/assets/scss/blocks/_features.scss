@@ -1,0 +1,97 @@
+.features {
+    padding: 170px 0 170px 0;
+    background: url("../images/features/clouds.svg") no-repeat center;
+
+
+    &__subtitle {
+        @include text (10px, 500, 12px, $secondaryColor);
+        margin-bottom: 20px;
+        font-family: 'Roboto';
+    }
+
+    &__title {
+        @include text (24px, 500, 30px, $secondaryColor);
+        font-family: 'Quicksand';
+        margin-bottom: 90px;
+    }
+
+    &__inner {
+        margin-bottom: 90px;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__headline {
+    
+        @include text (14px, 400, 25px, #4074F8);
+        font-family: 'Open Sans';
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-family: 'Open Sans';
+        @include text (11px, 600, 19px, $addtextColor);
+    }
+
+
+    &__btn {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        font-family: 'Quicksand';
+        width: 113px;
+        height: 43px;
+        text-align: center;
+        border: none;  
+        border-radius: 2px;
+    }
+
+    &__btn--blue {
+        background-color: #D2E1FF;
+        color: $accentColor;
+    }
+
+    &__btn--red {
+        background-color:#FFD7D7;
+        color:#D43F3F;
+    }
+
+    &__btn-group {
+        font-family: 'Open Sans';
+        @include text (11px, 600, 19px, $addtextColor);
+    }
+
+    &__span {
+        margin: 0 47px;
+        position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 0px;
+                right: 30px;
+                top: 9px;
+                border: 1px solid #DAE4FE;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 0px;
+                left: 30px;
+                top: 9px;
+                border: 1px solid #DAE4FE;
+            }
+
+            @media screen and (max-width: 382px) {
+                display: none;
+            }
+    }
+
+    &__wrapper {
+        margin-bottom: 105px;
+    }
+}

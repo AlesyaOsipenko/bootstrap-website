@@ -1,0 +1,15 @@
+.customers {
+
+    &__wrapper {
+        max-width: 945px;
+        min-height: 145px;
+    }
+
+    &__item {
+    fill: #D6DAE5;
+        &:hover {
+            fill:#5982E7;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.menu {
+
+    &__list {
+        margin-left: 73px;
+    }
+
+    &-link {
+        font-family: 'Quicksand', sans-serif;
+        @include text (12px, 500, 15px, #697CA6);
+        letter-spacing: 0.05em;
+        padding-left: 0px;
+    }
+
+    &__item {
+        padding-right: 26px;
+    }
+}
